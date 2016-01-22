@@ -41,13 +41,12 @@ function initApp() {
     if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
 
     AdMob.createBanner( {
-        adId: admobid.banner,
-		isTesting: true,
+        adId: admobid.banner, 
+        isTesting: true,
         overlap: false, 
         offsetTopBar: false, 
         position: AdMob.AD_POSITION.BOTTOM_CENTER,
         bgColor: 'black'
-        autoshow: true
     } );
     
     AdMob.prepareInterstitial({
